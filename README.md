@@ -24,10 +24,3 @@ This is a simple calculator app built with React. It can perform basic arithmeti
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-````
-
-### Output
-```markdown
-# React Calculator App
-````
