@@ -1,9 +1,9 @@
 /* eslint-disable no-case-declarations */
 import { useState } from "react";
-import { CalcKeyboard } from "./components/calc-keyboard";
-import { CalcDisplay } from "./components/calc-display";
-import { CalcStateProps } from "./types/operation";
-import { CalcHeader } from "./components/calc-header";
+import { CalcKeyboard } from "@/components/calc-keyboard";
+import { CalcDisplay } from "@/components/calc-display";
+import { CalcStateProps } from "@/types/operation";
+import { CalcHeader } from "@/components/calc-header";
 
 function App() {
   const [calcState, setCalcState] = useState<CalcStateProps>({

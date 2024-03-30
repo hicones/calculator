@@ -1,10 +1,19 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { HiOutlineSun, HiOutlineMoon } from "react-icons/hi";
 
 export function CalcHeader() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
   const element = document.documentElement;
+  const [theme, setTheme] = useState<"light" | "dark">(
+    (localStorage.getItem("theme") as "light" | "dark") ||
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light"
+  );
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   useEffect(() => {
     if (theme === "dark") {
