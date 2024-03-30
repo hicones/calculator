@@ -2,6 +2,9 @@
 
 This is a simple calculator app built with React. It can perform basic arithmetic operations like addition, subtraction, multiplication, and division.
 
+![image](https://github.com/hicones/calculator/assets/59674959/6bd427bd-e83b-4514-8378-cc587ad24d36)
+![image](https://github.com/hicones/calculator/assets/59674959/b5cd948a-5cbb-41c8-9eb7-e9f08419cc7e)
+
 ## Features
 
 - Addition
