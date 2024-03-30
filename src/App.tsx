@@ -3,6 +3,7 @@ import { useState } from "react";
 import { CalcKeyboard } from "./components/calc-keyboard";
 import { CalcDisplay } from "./components/calc-display";
 import { CalcStateProps } from "./types/operation";
+import { CalcHeader } from "./components/calc-header";
 
 function App() {
   const [calcState, setCalcState] = useState<CalcStateProps>({
@@ -113,8 +114,9 @@ function App() {
   return (
     <main
       id="calc-container"
-      className=" bg-gray-800 rounded-3xl w-full flex flex-col gap-8 overflow-hidden"
+      className=" bg-main-light dark:bg-main-dark rounded-3xl w-full flex flex-col gap-4 overflow-hidden dark:text-white text-gray-900"
     >
+      <CalcHeader />
       <CalcDisplay calcState={calcState} />
       <CalcKeyboard handleButtonClick={handleButtonClick} />
     </main>

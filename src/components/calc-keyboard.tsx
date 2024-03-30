@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { CalcButton } from "./calc-button";
 
 export function CalcKeyboard({
   handleButtonClick,
@@ -36,7 +37,6 @@ export function CalcKeyboard({
         ".",
         "Backspace",
         "Delete",
-        "Escape",
       ];
 
       if (validButtons.includes(button)) {
@@ -56,20 +56,16 @@ export function CalcKeyboard({
   return (
     <div
       id="calc-keyboard"
-      className="grid grid-rows-5 gap-y-4 bg-slate-700 rounded-t-xl p-4"
+      className="grid grid-rows-5 gap-y-4 dark:bg-surface-dark bg-surface-light rounded-t-xl p-4 mt-4 transition-colors"
     >
       {calcButtons.map((row, rowIndex) => (
         <div key={rowIndex} className="grid grid-cols-4 gap-x-4">
           {row.map((button, buttonIndex) => (
-            <button
+            <CalcButton
               key={buttonIndex}
-              className={`bg-slate-800 text-white rounded-lg p-4 outline-none ${
-                button === "0" ? "col-span-2" : ""
-              }`}
-              onClick={() => handleButtonClick(button)}
-            >
-              {button}
-            </button>
+              button={button}
+              handleButtonClick={handleButtonClick}
+            />
           ))}
         </div>
       ))}
