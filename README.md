@@ -23,4 +23,4 @@ This is a simple calculator app built with React. It can perform basic arithmeti
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source.
