@@ -1,4 +1,4 @@
-import { CalcStateProps } from "../types/operation";
+import { CalcStateProps } from "@/types/operation";
 
 export function CalcDisplay({ calcState }: { calcState: CalcStateProps }) {
   return (

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { CalcButton } from "./calc-button";
+import { CalcButton } from "../calc-button";
 
 export function CalcKeyboard({
   handleButtonClick,
